@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>10/1 Meeting Notes</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Project Team - 10/1 Meeting Notes">
+        <meta name="author" content="Julian Yan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="tangerine_icon.png"/>
+    </head>
+    <body>
+        <header>
+            <h1>Project Team - 10/1 Meeting Notes</h1>
+            <p>Team Memebers Present: Julian Yan, John Doe, Emily Doe</p>
+            <p>Posted by Julian Yan</p>
+        </header>
+
+        <main>          
+            <section>
+                <nav class="menu">
+                    <h2>Menu</h2>
+                    <ul>
+                      <li><a href="#unfinished_business">Unfinished Business</a></li>
+                      <li><a href="#agenda">Agenda</a></li>
+                      <li><a href="#new_business">New Business</a></li>
+                    </ul>
+                </nav>
+                
+                <section>
+                    <h2><a id ="#agenda">Agenda</a></h2>
+                        <h3><a id ="#unfinished_business"><em>Unfinished Business</em></a></h3>
+                            <ul>
+                                <li><b>John:</b> <i>Research</i></li>
+                                    <ul>
+                                        <li>Conducted research on users of similiar age <br> feedback was overall positive with some suggestions</li>
+                                    </ul>
+                                <li><b>Emily:</b> <i>TA OH</i></li>
+                                    <ul>
+                                        <li>Asked TAs about finer details and clarifying questions</li>
+                                    </ul>
+                                <li><b>Julian:</b> <i>Logo Design</i></li>
+                                    <ul>
+                                        <li>Drafted initial logo design of application</li>
+                                        <img src="logo.png" alt="logo design" width="100" height="100">
+                                    </ul>
+                            </ul>
+                        <hr>
+
+                        <h3><a id ="#new_business"><em>New Business</em></a></h3>
+                            <ol type="1">
+                                <li>Review user and TA <strong>feedback</strong></li>
+                                <div>
+                                    <p>Overall postive but should incorpate more <br> explanation and documentation</p>
+                                </div>
+                                <li>Assign new <strong>roles</strong></li>
+                                    <p>Ask everyone what they want <span>do or try</span> and <br> move on from there</p>
+                                <li>Evaluate the <strong>teamwork</strong> as a whole</li>
+                                <li>Address any team <strong>conflict/issues</strong></li>
+                                <li>Decide on next meeting <strong>date</strong></li>
+                            </ol>
+                        
+                        <h3><a id ="#recording"><em>Meeting Recording</em></a></h3>
+                        <p>Below is a video recording of the meeting.</p>
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+
+                            <p>Your browser doesn't support HTML5 video. Here is
+                               a <a href="video.mp4">link to the video</a> instead.</p>
+                        </video>
+                        <p>Play the audio file below while playing the video.</p>
+                        <audio controls>
+                            <source src = "audio.mp3" type = "audio/mp3" />
+                            Your browser does not support the <audio> element.
+                        </audio>
+                </section>
+
+                    <details>
+                        <summary>Credits</summary>
+                        Recording made on Zoom and slides made on Google Slides. 
+                    </details>
+                
+            </section>
+                        
+        </main>
+
+        <footer>
+            <p>Author: Julian Yan<br>
+            <a href="mailto:jwyan@ucsd.edu">jwyan@ucsd.edu</a></p>
+        </footer>
+
+        <form action="/form-page" method="get" id="info-form">
+            <fieldset>
+                <legend>Enter the information below</legend>
+            
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="today">Today's date:</label>
+                <input type="date" id="today" name="today" value="2021-10-02" min="2021-01-01" max="2021-12-31"><br>
+
+
+                <input type="radio" id="first_year" name="year">
+                <label for="first_year">First Year</label><br/>
+         
+                <input type="radio" id="second_year" name="year">
+                <label for="second_year">Second Year</label><br/>   
+          
+                <input type="radio" id="third_year" name="year">
+                <label for="third_year">Third Year</label><br/>  
+
+                <input type="radio" id="fourth_year" name="year">
+                <label for="fourth_year">Fourth Year</label><br/>
+
+                <input type="checkbox" id="bike" name="bike" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+
+                <input type="checkbox" id="car" name="car" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                
+                <input type="checkbox" id="skateboard" name="skateboard" value="Skateboard">
+                <label for="vehicle3"> I have a skateboard</label><br>
+
+                <label for="ucsd-fave">One thing you love about UCSD:</label><br>
+                <textarea id="ucsd-fave" name="ucsd-fave" rows="4" cols="50"></textarea><br>
+
+                <label for="college">Choose your college from the list:</label>
+                <input list="colleges" name="college" id="college">
+                <datalist id="colleges">
+                  <option value="Revelle">
+                  <option value="Earl Warren">               
+                  <option value="Eleanor Roosevelt">
+                  <option value="John Muir">
+                  <option value="Thurgood Marshall">
+                  <option value="Sixth">
+                  <option value="Seventh">
+                </datalist><br>
+
+                <label for="dining">Choose your favorite dining hall:</label>
+                <select name="halls" id="halls" form="dining-hall">
+                <option value="64-degrees">64 Degrees</option>
+                <option value="cafe-v">Cafe Ventanas</option>
+                <option value="canyon-vista">Canyon Vista</option>
+                <option value="club-med">Club Med</option>
+                <option value="foodworx">Foodworx</option>
+                <option value="ovt">OceanView</option>
+                <option value="pines">Pines</option>
+                <option value="sixth">Sixth College</option>
+                </select>
+
+              </fieldset>
+        </form>
+        <button type="submit" form="info-form" value="Submit">Submit</button>
+    </body>
+</html>
