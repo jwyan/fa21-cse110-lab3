@@ -1,0 +1,114 @@
+body {
+    /* background color using color name*/
+    background-color: lightblue;
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* pseudo hover */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* pseudo active */
+  a:active {
+    color: blue;
+  }
+
+  h1 {
+    /* h1 color using rgb*/
+    color: rgb(255, 0, 0);
+    /* absolute unit: pixel*/
+    font-size: 60px;
+    /* margin-left, absolute unit: inches*/
+    margin-left: 1in;
+    /* padding-top, padding-bottom */
+    padding-top: 1in;
+    padding-bottom: 1in;
+    /* border properties */
+    border-style: dotted;
+    border-color: black;
+    border-width: 0.5cm;
+    border-radius: 10cm;
+  }
+
+  h2 {
+    /* h2 color using hex*/
+    color: #32A852;
+    /* absolute unit: cm*/
+    font-size: 1cm;
+    /* margin-right, relative unit: vw*/
+    margin-right: 3vw;
+    /* padding-left */
+    padding-left: 1in;
+    /* text-decoration, text-align */
+    text-decoration: underline;
+    text-align: center;
+    height: 1in;
+  }
+
+  h3 {
+    /* h3 color using hsl*/
+    color: hsl(287, 72%, 83%);
+    /* relative unit: em*/
+    font-size: 1em;
+    /* margin-bottom, relative unit: vh*/
+    margin-bottom: 2vh;
+    /* padding-right */
+    padding-right: 1in;
+  }
+
+  p {
+    /* short margin */
+    margin: 25px 50px 75px 100px;
+    /* display block*/
+    display: block;
+    /* max-width */
+    max-width: 5in;
+  }
+
+  li {
+    /* auto margin*/
+    margin: auto;
+    /* position relative */
+    position: relative;
+    /* display inline-block */
+    display: inline-block;
+  }
+
+  video {
+    /* width, height */
+    width: 8in;
+    height: 5in; 
+    /* position static */
+    position: static;
+  }
+
+  audio {
+    /* min-width */
+    min-width: 50px;
+  }
+
+  /* flex and attributes */
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(255, 203, 30);
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .flex-container > div {
+    background-color: #ffffff;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
